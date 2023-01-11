@@ -1,0 +1,26 @@
+<h1>Liste des Etudiant</h1>
+  <input type="button" routerLink="/etudiants/add" value="Ajouter un etudiant" class="btn btn-dark">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">indice</th>
+        <th scope="col">nom</th>
+        <th scope="col">prenom</th>
+        <th scope="col">classe</th>
+        <th scope="col">Editer</th>
+        <th scope="col">Supprimer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let etudiant of allstudentdata; let indice = index;">
+        <th scope="row">{{indice + 1}}</th>
+        <td>{{etudiant.id}}</td>
+        <td>{{etudiant.nom | uppercase}}</td>
+        <td>{{etudiant.prenom | uppercase}}</td>
+        <td>{{etudiant.classe | uppercase}}</td>
+        <td><input type="button" class="btn btn-info" value="Editer" (click)="edit(etudiant)"></td>
+        <td><input type="button" class="btn btn-danger" value="Supprimer" (click)="deletestudent(etudiant)"></td>
+      </tr>
+    </tbody>
+  </table>

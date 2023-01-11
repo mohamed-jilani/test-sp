@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "nom": "MOHAMED",
+      "prenom": "mohamed",
+      "classe": "33",
+      "id": 11
+    },
+    {
+      "nom": "monji",
+      "prenom": "slim",
+      "classe": "7",
+      "id": 12
+    },
+    {
+      "nom": "lolo",
+      "prenom": "noura",
+      "classe": "9",
+      "id": 13
+    }
+  ]
+}
